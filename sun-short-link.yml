@@ -218,101 +218,98 @@ links:
         url: https://doc.sun-panel.top/usage/backup.html
 
 # ============================================================
-# v2（文档链接，名称带 v2_ 前缀，暂与 v1 指向相同目标，供 v2 客户端使用）
-# 规则：对应 v1 文档链接加 v2_ 前缀；新增的 v2 文档链接也在此
+# v2（文档链接，名称带 v2_ 前缀，供 v2 客户端使用）
+# 规则：对应 v1 文档链接加 v2_ 前缀；多语言统一用 ?lang= 组格式（与 v2 代码 linkWithLangParam / faqLinkWithLangParam 对应）；新增的 v2 文档链接也在此
 # ============================================================
   # 重置密码 文档
-  - name: "v2_reset_password_zh_cn"
-    url: "https://doc.sun-panel.top/zh_cn/usage/reset_password.html"
+  - name: v2_reset_password_lang
     type: 302
-  - name: "v2_reset_password_en"
-    url: "https://doc.sun-panel.top/usage/reset_password.html"
-    type: 302
+    urls_query_name: lang
+    urls:
+      - name: zh_cn
+        url: https://doc.sun-panel.top/zh_cn/usage/reset_password.html
+      - name: en
+        url: https://doc.sun-panel.top/usage/reset_password.html
 
   # 打赏 文档
-  - name: "v2_donate_zh_cn"
-    url: "https://doc.sun-panel.top/zh_cn/introduce/donate.html"
+  - name: v2_donate_lang
     type: 302
-  - name: "v2_donate_en"
-    url: "https://doc.sun-panel.top/introduce/donate.html"
-    type: 302
-
-  # 更新日志中文（文档）
-  - name: "v2_update_log_zh_cn"
-    url: "https://doc.sun-panel.top/zh_cn/update/update_log.html"
-    type: 302
+    urls_query_name: lang
+    urls:
+      - name: zh_cn
+        url: https://doc.sun-panel.top/zh_cn/introduce/donate.html
+      - name: en
+        url: https://doc.sun-panel.top/introduce/donate.html
 
   # 交流群导航页
-  - name: "v2_groupChat_zh_cn"
-    url: "https://doc.sun-panel.top/zh_cn/introduce/author_groups.html"
+  - name: v2_groupChat_lang
     type: 302
-  - name: "v2_groupChat_en"
-    url: "https://doc.sun-panel.top/introduce/author_groups.html"
-    type: 302
+    urls_query_name: lang
+    urls:
+      - name: zh_cn
+        url: https://doc.sun-panel.top/zh_cn/introduce/author_groups.html
+      - name: en
+        url: https://doc.sun-panel.top/introduce/author_groups.html
 
   # 文档常见问题
-  - name: "v2_faq_zh_cn"
-    url: "https://doc.sun-panel.top/zh_cn/faq/faq"
+  - name: v2_faq_lang
     type: 302
-  - name: "v2_faq_en"
-    url: "https://doc.sun-panel.top/faq/faq"
-    type: 302
+    urls_query_name: lang
+    urls:
+      - name: zh_cn
+        url: https://doc.sun-panel.top/zh_cn/faq/faq
+      - name: en
+        url: https://doc.sun-panel.top/faq/faq
 
   # OpenApi 文档
-  - name: "v2_openApiDoc_zh_cn"
-    url: "https://doc.sun-panel.top/zh_cn/openapi/v1"
+  - name: v2_openApiDoc_lang
     type: 302
-  - name: "v2_openApiDoc_en"
-    url: "https://doc.sun-panel.top/openapi/v1"
-    type: 302
+    urls_query_name: lang
+    urls:
+      - name: zh_cn
+        url: https://doc.sun-panel.top/zh_cn/openapi/v1
+      - name: en
+        url: https://doc.sun-panel.top/openapi/v1
 
   # 美化教程 文档
-  - name: "v2_only_name_beautify_doc_zh_cn"
-    url: "https://doc.sun-panel.top/zh_cn/advanced/landscap.html"
+  - name: v2_only_name_beautify_doc_lang
     type: 302
-  - name: "v2_only_name_beautify_doc_en"
-    url: "https://doc.sun-panel.top/advanced/landscap.html"
-    type: 302
-
-  # 浏览器扩展 文档
-  - name: "v2_browser_plugin_doc_zh_cn"
-    url: "https://doc.sun-panel.top/zh_cn/browser_extension/"
-    type: 302
-  - name: "v2_browser_plugin_doc_en"
-    url: "https://doc.sun-panel.top/browser_extension/"
-    type: 302
-
-  # 浏览器扩展更新日志 文档
-  - name: "v2_browser_plugin_update_log_zh_cn"
-    url: "https://doc.sun-panel.top/zh_cn/browser_extension/update_log"
-    type: 302
-  - name: "v2_browser_plugin_update_log_en"
-    url: "https://doc.sun-panel.top/browser_extension/update_log"
-    type: 302
+    urls_query_name: lang
+    urls:
+      - name: zh_cn
+        url: https://doc.sun-panel.top/zh_cn/advanced/landscap.html
+      - name: en
+        url: https://doc.sun-panel.top/advanced/landscap.html
 
   # 卡片异常解决方案
-  - name: "v2_faq_docker_card_abnormal_zh_cn"
-    url: "https://doc.sun-panel.top/zh_cn/faq/faq.html#docker_card_abnormal"
+  - name: v2_faq_docker_card_abnormal_lang
     type: 302
-  - name: "v2_faq_docker_card_abnormal_en"
-    url: "https://doc.sun-panel.top/faq/faq.html#docker_card_abnormal"
-    type: 302
+    urls_query_name: lang
+    urls:
+      - name: zh_cn
+        url: https://doc.sun-panel.top/zh_cn/faq/faq.html#docker_card_abnormal
+      - name: en
+        url: https://doc.sun-panel.top/faq/faq.html#docker_card_abnormal
 
   # 容器运行错误解决方案
-  - name: "v2_faq_docker_run_error_zh_cn"
-    url: "https://doc.sun-panel.top/zh_cn/faq/faq.html#docker_run_error"
+  - name: v2_faq_docker_run_error_lang
     type: 302
-  - name: "v2_faq_docker_run_error_en"
-    url: "https://doc.sun-panel.top/faq/faq.html#docker_run_error"
-    type: 302
+    urls_query_name: lang
+    urls:
+      - name: zh_cn
+        url: https://doc.sun-panel.top/zh_cn/faq/faq.html#docker_run_error
+      - name: en
+        url: https://doc.sun-panel.top/faq/faq.html#docker_run_error
 
   # PRO 授权失效 FAQ（v2 新增文档链接）
-  - name: "v2_faq_proAccountInvalid_zh_cn"
-    url: "https://doc.sun-panel.top/zh_cn/faq/faq"
+  - name: v2_faq_proAccountInvalid_lang
     type: 302
-  - name: "v2_faq_proAccountInvalid_en"
-    url: "https://doc.sun-panel.top/faq/faq"
-    type: 302
+    urls_query_name: lang
+    urls:
+      - name: zh_cn
+        url: https://doc.sun-panel.top/zh_cn/faq/faq
+      - name: en
+        url: https://doc.sun-panel.top/faq/faq
 
   # 更新日志 - 正式版 - 多语言版本
   - name: v2_update_log_lang
